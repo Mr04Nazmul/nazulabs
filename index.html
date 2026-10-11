@@ -27,6 +27,44 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ux-focus);outline-o
 section[id]{scroll-margin-top:24px}
 @media(max-width:680px){.wrap{width:min(100% - 32px,1160px)}.nav{min-height:72px;height:auto;gap:12px;flex-wrap:wrap;padding:14px 0}.navlinks{flex-wrap:wrap;gap:12px}.hero{padding:64px 0 52px}.btn{min-height:44px}.section{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* NAZORIX visual system v2 — design direction guided by UI/UX Pro Max */
+:root{--surface:#090f20;--surface-raised:#101a31;--ink:#f4f8ff;--muted:#aebbd2;--accent:#76b9ff;--violet:#aa8aff;--line:rgba(159,193,255,.19)}
+body{background:#050916;color:var(--ink);font-size:16px;line-height:1.55}
+body:before{background:radial-gradient(ellipse at 54% 0%,rgba(70,105,245,.28),transparent 44%),radial-gradient(ellipse at 4% 36%,rgba(110,70,230,.14),transparent 38%),#050916}
+.wrap{width:min(1200px,calc(100% - 40px))}
+.nav{height:86px;border-color:var(--line);position:relative;z-index:3}
+.brand b{font-size:16px;letter-spacing:4px}
+.navlinks{color:#c3cee1;font-size:13px}
+.navlinks a{padding:12px 0}
+.navlinks a:hover{color:#fff}
+.btn{font-size:14px;border-color:var(--line);background:rgba(22,36,65,.65);border-radius:13px}
+.btn.primary{background:linear-gradient(110deg,#7657ef,#337be9);box-shadow:0 14px 35px rgba(66,83,232,.23)}
+.hero{padding:118px 0 90px}
+.hero h1{font-size:clamp(48px,7.8vw,100px);line-height:1.04;letter-spacing:-.065em;font-weight:850}
+.hero p{color:var(--muted);font-size:17px;line-height:1.75}
+.eyebrow{font-size:12px;letter-spacing:.14em;border-color:var(--line);background:rgba(44,77,145,.2)}
+.hero-actions{gap:14px}
+.hero-actions .btn{padding:15px 24px}
+.stats{background:linear-gradient(125deg,rgba(20,36,68,.8),rgba(11,17,35,.75));border-color:var(--line);box-shadow:0 20px 65px rgba(0,0,0,.18)}
+.stat{padding:30px 24px}
+.stat strong{font-size:30px}
+.stat span{color:#b5c2d7;font-size:12px;letter-spacing:.1em}
+.section{padding:110px 0}
+.section h2{line-height:1.13;letter-spacing:-.045em}
+.section-head p,.card p,.step p,.phase ul,.cta p{color:var(--muted);font-size:15px;line-height:1.75}
+.kicker,.num,.phase small{font-size:12px;letter-spacing:.12em;color:#91c5ff}
+.cards,.roadmap{gap:20px}
+.card,.phase{background:linear-gradient(155deg,rgba(20,34,64,.92),rgba(9,16,34,.94));border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 16px 50px rgba(0,0,0,.12)}
+.card h3,.phase h3{font-size:20px}
+.card .icon{color:#91c5ff}
+.step{border-color:var(--line);padding:25px 18px}
+.step h3{font-size:18px}
+.cta{background:radial-gradient(ellipse at 50% 0%,rgba(79,106,250,.25),transparent 68%),#0c1630;border-color:var(--line)}
+.footer{color:#b4c1d4}
+.footer-row{border-color:var(--line)}
+@media(max-width:760px){.nav{height:auto;min-height:72px}.navlinks{display:none}.hero{padding:76px 0 65px}.hero h1{letter-spacing:-.05em}.hero p{font-size:16px}.hero-actions .btn{width:100%}.section{padding:76px 0}.cards,.roadmap{grid-template-columns:1fr}.stat{padding:22px}.card,.phase{padding:24px}.nav-actions .btn{font-size:13px}.mobile-menu{display:none}}
+@media(max-width:420px){.wrap{width:calc(100% - 28px)}.brand b{font-size:14px;letter-spacing:2px}.hero h1{font-size:clamp(40px,11vw,54px)}}
 </style>
 </head>
 <body>
