@@ -66,6 +66,26 @@ body:before{background:radial-gradient(ellipse at 54% 0%,rgba(70,105,245,.28),tr
 @media(max-width:760px){.nav{height:auto;min-height:72px}.navlinks{display:none}.hero{padding:76px 0 65px}.hero h1{letter-spacing:-.05em}.hero p{font-size:16px}.hero-actions .btn{width:100%}.section{padding:76px 0}.cards,.roadmap{grid-template-columns:1fr}.stat{padding:22px}.card,.phase{padding:24px}.nav-actions .btn{font-size:13px}.mobile-menu{display:none}}
 @media(max-width:420px){.wrap{width:calc(100% - 28px)}.brand b{font-size:14px;letter-spacing:2px}.hero h1{font-size:clamp(40px,11vw,54px)}}
 </style>
+
+<!-- NAZORIX UI/UX enhancement: presentation-only; no application logic modified -->
+<style id="nazorix-uiux-pro">
+:root{color-scheme:dark;--nx-border:rgba(143,180,255,.17);--nx-focus:#85c9ff}
+body{font-feature-settings:"kern";-webkit-font-smoothing:antialiased}
+.nav{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.btn,.card,.phase{transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;line-height:1.4}
+.btn:hover{border-color:rgba(140,189,255,.55);box-shadow:0 8px 24px rgba(35,91,205,.19)}
+.btn.primary:hover{box-shadow:0 12px 35px rgba(75,104,255,.35);filter:brightness(1.1)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--nx-focus);outline-offset:4px;border-radius:8px}
+.card{border-color:var(--nx-border);box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}
+.card:hover{transform:translateY(-3px);border-color:rgba(123,174,255,.45)}
+.hero p,.section-head p,.card p,.step p,.cta p{color:#b5c2d8}
+.navlinks,.phase ul{color:#acbad1}
+.stat span,.footer{color:#9aaac4}
+.hero h1{overflow-wrap:break-word}
+@media(max-width:760px){.hero{padding-top:76px;padding-bottom:62px}.hero h1{letter-spacing:-2.5px;line-height:1.03}.hero-actions{flex-wrap:wrap}.hero-actions .btn{min-height:48px}.card{min-height:unset}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.btn,.card,.phase{transition:none!important}.card:hover{transform:none}}
+</style>
 </head>
 <body>
 <div class="wrap">
