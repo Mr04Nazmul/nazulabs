@@ -111,6 +111,7 @@ body:before{background:radial-gradient(ellipse at 18% 5%,rgba(78,42,190,.34),tra
 @media(max-width:760px){.nav{height:70px;padding:0 8px}.hero{padding:76px 0 65px}.hero h1{font-size:clamp(46px,12vw,70px);letter-spacing:-2px}.hero p{font-size:15px}.stats{border-radius:18px}.stat{padding:20px 8px}.stat strong{font-size:22px}.section{padding:70px 0}.card{border-radius:20px}}
 @media(prefers-reduced-motion:reduce){.card:hover{transform:none}}
 </style>
+<link rel="stylesheet" href="./assets/lycoris/nazorix-hero.css">
 </head>
 <body>
 <div class="wrap">
@@ -119,7 +120,8 @@ body:before{background:radial-gradient(ellipse at 18% 5%,rgba(78,42,190,.34),tra
 <div class="navlinks"><a href="#network">Network</a><a href="#how">How it works</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a><a href="#about">PROJECT / ABOUT</a></div>
 <div class="nav-actions"><a class="btn" href="login.html">Login</a><a class="btn primary" href="login.html?mode=create">Join NAZORIX</a><span class="mobile-menu">☰</span></div>
 </nav>
-<section class="hero">
+<div id="nazorix-specimen-root"></div>
+<section class="hero" id="nazorix-hero-fallback">
 <div class="hero-glow"></div>
 <div class="eyebrow"><span class="dot"></span> Network participation layer</div>
 <h1>Participate in the<br><span class="grad">next digital network.</span></h1>
@@ -171,5 +173,6 @@ body:before{background:radial-gradient(ellipse at 18% 5%,rgba(78,42,190,.34),tra
 </section>
 <footer class="footer"><div class="footer-row"><b>NAZORIX</b><span>© 2026 NAZORIX Network · BUILD · CONNECT · GROW</span></div></footer>
 </div>
+<script type="module" src="./assets/lycoris/nazorix-hero.js"></script>
 </body>
 </html>

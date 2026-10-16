@@ -1,0 +1,24 @@
+/* Utilities only: keep the existing HTML site's element styles intact. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "../components/**/*.tsx";
+@source "../src/**/*.tsx";
+
+.nazorix-specimen-shell {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  isolation: isolate;
+}
+.nazorix-specimen-shell *,
+.nazorix-specimen-shell *::before,
+.nazorix-specimen-shell *::after { box-sizing: border-box; }
+.nazorix-specimen-shell :focus-visible {
+  outline: 2px solid #aa88ff;
+  outline-offset: 5px;
+}
+.nazorix-specimen-shell .lys-stage a { min-height: 44px; display: inline-flex; align-items: center; }
+.nazorix-specimen-shell .lys-nav button { min-height: 44px; }
+#nazorix-hero-fallback[hidden] { display: none; }
